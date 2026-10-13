@@ -1,0 +1,182 @@
+==============================================================================
+(1) Pooled OLS
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:       sec_enroll_gross   R-squared:                        0.5930
+Estimator:                   PanelOLS   R-squared (Between):              0.6725
+No. Observations:                 213   R-squared (Within):               0.4531
+Date:                Tue, Oct 13 2026   R-squared (Overall):              0.5930
+Time:                        19:23:49   Log-likelihood                   -846.63
+Cov. Estimator:        Driscoll-Kraay                                           
+                                        F-statistic:                      101.49
+Entities:                          11   P-value                           0.0000
+Avg Obs:                       19.364   Distribution:                   F(3,209)
+Min Obs:                       8.0000                                           
+Max Obs:                       25.000   F-statistic (robust):             132.78
+                                        P-value                           0.0000
+Time periods:                      25   Distribution:                   F(3,209)
+Avg Obs:                       8.5200                                           
+Min Obs:                       5.0000                                           
+Max Obs:                       11.000                                           
+                                                                                
+                               Parameter Estimates                               
+=================================================================================
+               Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------
+const            -34.892     8.1259    -4.2939     0.0000     -50.911     -18.873
+internet_10pp     1.0147     0.3232     3.1391     0.0019      0.3775      1.6519
+log_gdp_pc        10.933     1.6162     6.7647     0.0000      7.7468      14.119
+urban_pct         0.0422     0.1340     0.3150     0.7531     -0.2219      0.3063
+=================================================================================
+
+
+
+==============================================================================
+(2) Country FE
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:       sec_enroll_gross   R-squared:                        0.5403
+Estimator:                   PanelOLS   R-squared (Between):             -3.4610
+No. Observations:                 213   R-squared (Within):               0.5403
+Date:                Tue, Oct 13 2026   R-squared (Overall):             -3.6450
+Time:                        19:23:49   Log-likelihood                   -720.67
+Cov. Estimator:        Driscoll-Kraay                                           
+                                        F-statistic:                      77.963
+Entities:                          11   P-value                           0.0000
+Avg Obs:                       19.364   Distribution:                   F(3,199)
+Min Obs:                       8.0000                                           
+Max Obs:                       25.000   F-statistic (robust):             199.55
+                                        P-value                           0.0000
+Time periods:                      25   Distribution:                   F(3,199)
+Avg Obs:                       8.5200                                           
+Min Obs:                       5.0000                                           
+Max Obs:                       11.000                                           
+                                                                                
+                               Parameter Estimates                               
+=================================================================================
+               Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------
+internet_10pp     0.3447     0.2886     1.1944     0.2338     -0.2244      0.9139
+log_gdp_pc        24.729     4.7367     5.2207     0.0000      15.388      34.070
+urban_pct         0.0613     0.3228     0.1898     0.8496     -0.5753      0.6979
+=================================================================================
+
+F-test for Poolability: 45.041
+P-value: 0.0000
+Distribution: F(10,199)
+
+Included effects: Entity
+
+==============================================================================
+(3) Country + year FE
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:       sec_enroll_gross   R-squared:                        0.1618
+Estimator:                   PanelOLS   R-squared (Between):             -0.0120
+No. Observations:                 213   R-squared (Within):               0.3428
+Date:                Tue, Oct 13 2026   R-squared (Overall):             -0.0901
+Time:                        19:23:49   Log-likelihood                   -703.04
+Cov. Estimator:        Driscoll-Kraay                                           
+                                        F-statistic:                      11.258
+Entities:                          11   P-value                           0.0000
+Avg Obs:                       19.364   Distribution:                   F(3,175)
+Min Obs:                       8.0000                                           
+Max Obs:                       25.000   F-statistic (robust):             46.714
+                                        P-value                           0.0000
+Time periods:                      25   Distribution:                   F(3,175)
+Avg Obs:                       8.5200                                           
+Min Obs:                       5.0000                                           
+Max Obs:                       11.000                                           
+                                                                                
+                               Parameter Estimates                               
+=================================================================================
+               Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+---------------------------------------------------------------------------------
+internet_10pp    -0.8426     1.3254    -0.6357     0.5258     -3.4585      1.7733
+log_gdp_pc        16.133     7.7666     2.0772     0.0392      0.8043      31.461
+urban_pct         0.0691     0.3456     0.1998     0.8418     -0.6130      0.7512
+=================================================================================
+
+F-test for Poolability: 14.674
+P-value: 0.0000
+Distribution: F(34,175)
+
+Included effects: Entity, Time
+
+==============================================================================
+(4) Two-way FE, internet lagged
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:       sec_enroll_gross   R-squared:                        0.1814
+Estimator:                   PanelOLS   R-squared (Between):              0.2007
+No. Observations:                 206   R-squared (Within):               0.1953
+Date:                Tue, Oct 13 2026   R-squared (Overall):              0.1358
+Time:                        19:23:49   Log-likelihood                   -676.08
+Cov. Estimator:        Driscoll-Kraay                                           
+                                        F-statistic:                      12.481
+Entities:                          11   P-value                           0.0000
+Avg Obs:                       18.727   Distribution:                   F(3,169)
+Min Obs:                       8.0000                                           
+Max Obs:                       24.000   F-statistic (robust):             64.061
+                                        P-value                           0.0000
+Time periods:                      24   Distribution:                   F(3,169)
+Avg Obs:                       8.5833                                           
+Min Obs:                       6.0000                                           
+Max Obs:                       11.000                                           
+                                                                                
+                                 Parameter Estimates                                  
+======================================================================================
+                    Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+--------------------------------------------------------------------------------------
+internet_10pp_lag1    -1.6275     1.1913    -1.3662     0.1737     -3.9792      0.7242
+log_gdp_pc             15.344     8.1375     1.8856     0.0611     -0.7199      31.408
+urban_pct              0.1124     0.3399     0.3306     0.7413     -0.5587      0.7835
+======================================================================================
+
+F-test for Poolability: 15.175
+P-value: 0.0000
+Distribution: F(33,169)
+
+Included effects: Entity, Time
+
+==============================================================================
+(5) Two-way FE + edu spending
+==============================================================================
+                          PanelOLS Estimation Summary                           
+================================================================================
+Dep. Variable:       sec_enroll_gross   R-squared:                        0.1163
+Estimator:                   PanelOLS   R-squared (Between):             -1.7543
+No. Observations:                 170   R-squared (Within):               0.4025
+Date:                Tue, Oct 13 2026   R-squared (Overall):             -1.9405
+Time:                        19:23:49   Log-likelihood                   -562.63
+Cov. Estimator:        Driscoll-Kraay                                           
+                                        F-statistic:                      4.3107
+Entities:                          11   P-value                           0.0026
+Avg Obs:                       15.455   Distribution:                   F(4,131)
+Min Obs:                       3.0000                                           
+Max Obs:                       24.000   F-statistic (robust):             13.970
+                                        P-value                           0.0000
+Time periods:                      25   Distribution:                   F(4,131)
+Avg Obs:                       6.8000                                           
+Min Obs:                       1.0000                                           
+Max Obs:                      10.0000                                           
+                                                                                
+                                 Parameter Estimates                                 
+=====================================================================================
+                   Parameter  Std. Err.     T-stat    P-value    Lower CI    Upper CI
+-------------------------------------------------------------------------------------
+internet_10pp        -0.2124     1.4352    -0.1480     0.8826     -3.0515      2.6267
+log_gdp_pc            24.168     5.7191     4.2258     0.0000      12.854      35.481
+urban_pct            -0.3950     0.4276    -0.9238     0.3573     -1.2410      0.4509
+edu_spend_gdp_pct    -0.1222     0.5488    -0.2227     0.8241     -1.2079      0.9635
+=====================================================================================
+
+F-test for Poolability: 11.823
+P-value: 0.0000
+Distribution: F(34,131)
+
+Included effects: Entity, Time

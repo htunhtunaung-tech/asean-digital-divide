@@ -1,0 +1,12 @@
+iso3,country,internet_users_pct,mobile_subs_per100,log_gdp_pc,urban_pct,sec_enroll_gross,primary_completion,internet_growth_pp_yr,cluster_rank,cluster,cluster_profile,features_imputed
+BRN,Brunei,97.635,121.289,11.266,74.807,89.262,102.411,3.65,0,Group 1,higher income (GDP per capita) and higher urbanization,
+MYS,Malaysia,95.884,137.462,10.36,75.979,77.353,89.759,3.34,0,Group 1,higher income (GDP per capita) and higher urbanization,
+SGP,Singapore,94.709,165.045,11.774,100.0,103.04,99.61,1.963,0,Group 1,higher income (GDP per capita) and higher urbanization,
+KHM,Cambodia,64.006,118.721,8.779,40.364,55.362,89.095,5.853,1,Group 2,lower secondary enrollment and lower mobile subscriptions,
+LAO,Lao PDR,62.106,63.984,9.017,38.078,57.093,88.965,5.003,1,Group 2,lower secondary enrollment and lower mobile subscriptions,
+THA,Thailand,86.299,167.264,9.943,59.658,88.188,102.237,5.715,2,Group 3,lower internet use and lower income (GDP per capita),
+VNM,Viet Nam,77.066,134.982,9.467,37.279,93.125,100.861,4.059,2,Group 3,lower internet use and lower income (GDP per capita),
+PHL,Philippines,68.203,131.577,9.147,54.785,88.589,87.913,3.651,2,Group 3,lower internet use and lower income (GDP per capita),
+IDN,Indonesia,64.861,126.446,9.499,57.503,97.486,101.877,4.995,2,Group 3,lower internet use and lower income (GDP per capita),
+MMR,Myanmar,45.448,123.658,8.597,30.308,,,4.586,2,Group 3,lower internet use and lower income (GDP per capita),"sec_enroll_gross, primary_completion"
+TLS,Timor-Leste,33.527,108.754,8.569,28.72,84.741,95.228,2.998,2,Group 3,lower internet use and lower income (GDP per capita),
