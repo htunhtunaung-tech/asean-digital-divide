@@ -98,7 +98,8 @@ with tab_overview:
     fig = px.choropleth(snap, locations="iso3", color=indicator, hover_name="country",
                         color_continuous_scale=SEQ_SCALE,
                         labels={indicator: config.LABELS[indicator]})
-    fig.update_geos(fitbounds="locations", visible=False, showcountries=True,
+    fig.update_geos(fitbounds="locations", visible=False, 
+                    showcountries=True, bgcolor="rgba(0,0,0,0)",
                     countrycolor="rgba(128,128,128,0.4)", showland=True,
                     landcolor="rgba(128,128,128,0.08)")
     fig.update_traces(marker_line_color="white", marker_line_width=0.6)
